@@ -13,9 +13,13 @@ $client->addSendAddress('user@example.com');
 
 $client->addAttachment('files/myfile.pdf', 'myfile.pdf', 'application/pdf'); 
 
+//$client->send('My PDF File', 'Attached is my PDF file for your viewing pleasure'); 
+
 $client->setSubject('My PDF File');
 $client->setMessage('Attached is my PDF file for your viewing pleasure'); 
 $client->send(); 
+
+
 
 }}}
  
