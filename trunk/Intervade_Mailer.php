@@ -220,7 +220,16 @@ class Intervade_Mailer {
      * @todo add support for linux sendmail and smtp
      * @return Intervade_Mailer
      */
-    public function send() { 
+    public function send($subject = NULL, $message = NULL) {
+        
+        // setup optional parameters 
+        if($subject != NULL) { 
+            $this->setSubject($subject); 
+        }
+        if($message != NULL) { 
+            $this->setMessage($message); 
+        }
+        
         $headers = $this->getHeaders();
         $to = join(",", $this->sendTo); 
         if($this->sendVia == Intervade_Mailer::MAIL_PHP) { 
