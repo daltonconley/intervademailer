@@ -1,4 +1,4 @@
-#simple mail example
+#summary simple mail example
 
 = Simple Mail Example =
 This is a simple example on how to use the mailer with php's mail() function.
