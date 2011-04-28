@@ -85,6 +85,11 @@ class Intervade_Mailer {
      */
     protected $sendMailBin = '/usr/bin/sendmail';
     
+    
+    /**
+     * Determines the process to use when sending mail
+     * @var string
+     */
     protected $sendVia = Intervade_Mailer::MAIL_PHP; 
     
     
@@ -216,7 +221,7 @@ class Intervade_Mailer {
      * @return Intervade_Mailer
      */
     public function send() { 
-        $headers = $this->_getHeaders();
+        $headers = $this->getHeaders();
         $to = join(",", $this->sendTo); 
         if($this->sendVia == Intervade_Mailer::MAIL_PHP) { 
             $this->send_php($to, $headers); 
@@ -250,7 +255,7 @@ class Intervade_Mailer {
      * up into a nice mail header.
      * @return string 
      */
-    private function _getHeaders() { 
+    private function getHeaders() { 
         
         // unique hash 
         $uid = md5(uniqid(time()));
