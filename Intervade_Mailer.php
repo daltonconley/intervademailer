@@ -44,6 +44,7 @@ class Intervade_Mailer {
     
     /**
      * Array of attachments
+     * array ( path, filename, encoding, content-type ) 
      * @var array
      */
     protected $attachments; 
@@ -173,7 +174,7 @@ class Intervade_Mailer {
         $this->attachments[] = array(
             'path' => $path,
             'filename' => $filename,
-			'encoding' => $encoding,
+            'encoding' => $encoding,
             'content-type' => $contentType
             ); 
         
