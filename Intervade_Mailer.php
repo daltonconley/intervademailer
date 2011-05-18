@@ -1,8 +1,8 @@
 <?php
 /**
- * Intervade Framework Mail Class 
+ *   Intervade Framework Mail Class 
  * 
- * Copyright (C) 2011  Dalton Conley. 
+ *   Copyright (C) 2011  Dalton Conley <dalton.conley@mnsu.edu>
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,9 +16,7 @@
  *
  *   You should have received a copy of the GNU General Public License
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * 
- * I would love some contributors to make this a bigger better project. If you 
- * want access to the SVN, then shoot me an email at dalton.conley@mnsu.edu 
+ *
  * 
  */
 class Intervade_Mailer { 
