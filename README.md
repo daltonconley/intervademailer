@@ -4,7 +4,7 @@ Easy-to-use php mailer class
 ##Supported Mail Clients
 Intervade Mailer currently only supports the php's mail() functionality but there is currently work being done to allow support for SMTP and sendmail functionality as well.
 
-## Examples
+## Example
 This is a simple example on how to use the mailer with php's mail() function.
 
     require('Intervade_Mailer.php'); 
