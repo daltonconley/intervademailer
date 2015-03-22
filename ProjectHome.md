@@ -1,0 +1,1 @@
+Easy-to-use php mailer class. Goal: to replace phpmailer and provide a better source of documentation
